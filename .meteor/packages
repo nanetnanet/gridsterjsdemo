@@ -6,7 +6,5 @@
 
 meteor-platform
 autopublish
-insecure
 matteodem:gridster
 jquery
-spacebars-compiler
