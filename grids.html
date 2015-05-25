@@ -1,0 +1,30 @@
+<head>
+  <title>Gridster.JS demo</title>
+</head>
+
+<body>
+ <div class="gridster">
+	<ul>
+		<li data-row="1" data-col="1" data-sizex="1" data-sizey="1" style="background:{{color}}">{{>hello}}</li>
+		<li data-row="2" data-col="1" data-sizex="1" data-sizey="1" style="background:{{color}}">{{>hello}}</li>
+		<li data-row="3" data-col="1" data-sizex="1" data-sizey="1" style="background:{{color}}">{{>hello}}</li>
+		 
+		<li data-row="1" data-col="2" data-sizex="2" data-sizey="1" style="background:{{color}}">{{>hello}}</li>
+		<li data-row="2" data-col="2" data-sizex="2" data-sizey="2" style="background:{{color}}">{{>hello}}</li>
+		 
+		<li data-row="1" data-col="4" data-sizex="1" data-sizey="1" style="background:{{color}}">{{>hello}}</li>
+		<li data-row="2" data-col="4" data-sizex="2" data-sizey="1" style="background:{{color}}">{{>hello}}</li>
+		<li data-row="3" data-col="4" data-sizex="1" data-sizey="1" style="background:{{color}}">{{>hello}}</li>
+	</ul>
+ </div> 
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+  <p>Double-click to erase</p>
+</template>
+
+<template name="box">
+	<li data-row="1" data-col="1" style="background:{{color}}">{{>hello}}</li>
+</template>
